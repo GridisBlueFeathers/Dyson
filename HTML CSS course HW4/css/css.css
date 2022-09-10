@@ -55,6 +55,7 @@ body{
 }
 
 .navigation__link{
+    position: relative;
     text-decoration: none;
     font-weight: 400;
     font-size: 18px;
@@ -68,6 +69,16 @@ body{
     line-height: 25px;
     color: #2B292D;
 }
+
+.navigation__link:hover::before{
+    position: absolute;
+    content: '';
+    border-bottom: 2px solid #2B292D;
+    height: 2px;
+    width: 100%;
+    top: 18px;
+}
+
 
 .button{
     width: 160px;
