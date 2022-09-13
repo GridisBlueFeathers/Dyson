@@ -5,6 +5,7 @@ body{
 
 a{
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .container{
@@ -159,9 +160,11 @@ a{
 }
 
 .buttons__two-buttons{
-    width: 328px;
-    display: flex;
-    justify-content: space-between;
+    width: 336px;
+}
+
+.buttons__two-buttons .button-get-started{
+    margin-right: 4px;
 }
 
 .description{
@@ -200,15 +203,15 @@ a{
 }
 
 .engagement{
-    background-color: #F4F5F7;
+    background-color: rgba(0, 161, 198, 0.07);
+    mix-blend-mode: normal;    
 }
 
 .engagement__content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-top: 108px;
     text-align: center;
+    max-width: 555px;
+    margin: 0 auto;
 }
 
 .engagement__subtitle{
@@ -229,6 +232,10 @@ a{
     margin-bottom: 30px;
 }
 
+.engagement .buttons__two-buttons{
+    margin: 0 auto;
+}
+
 .engagement__description-text{
     font-weight: 400;
     font-size: 24px;
@@ -239,9 +246,10 @@ a{
 }
 
 .engagement__targets{
-    margin: 111px 0 110px;
+    margin-top: 111px;
+    padding-bottom: 110px;
     display: grid;
-    grid-template-columns: repeat(4, 262px);
+    grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
 .engagement__target{
@@ -252,8 +260,8 @@ a{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     padding-top: 22px;
-    box-sizing: border-box;
     cursor: pointer;
+    text-align: center;
 }
 
 .engagement__target:hover{
@@ -263,7 +271,6 @@ a{
     box-shadow: 0px 13px 18px -8px rgba(0, 0, 0, 0.15), 0px 11px 55px 10px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
     padding-top: 22px;
-    box-sizing: border-box;
     transition: 200ms;
 }
 
@@ -300,8 +307,8 @@ a{
 .gallery__gallery{
     display: grid;
     grid-template-areas: "one two three" "four five three" "four six seven";
-    grid-template-columns: repeat(3, 347px);
-    grid-template-rows: repeat(3, 208px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     column-gap: 50px;
     row-gap: 42px;
     margin-bottom: 91px;
