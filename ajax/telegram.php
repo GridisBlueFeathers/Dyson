@@ -12,8 +12,8 @@ foreach($arr as $key => $value) {
 
 $website="https://api.telegram.org/bot".$token;
     $params=[
-        'chat_id'=>$chat_id;
-        'text'=>$txt;
+            'chat_id'=>$chat_id;
+            'text'=>$txt;
     ];
     $ch = curl_init($website . '/sendMessage');
     curl_setopt($ch, CURLOPT_HEADER, false);
