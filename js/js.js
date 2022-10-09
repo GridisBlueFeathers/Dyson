@@ -60,7 +60,7 @@ $('#button').click(function(e){
 
     $.ajax({
         url: 'ajax/telegram.php',
-        type: 'POST',
+        type: "POST",
         cache: false,
         data: {'email': email},
         dataType: 'html'
@@ -73,7 +73,7 @@ $('#modal__button').click(function(e){
 
     $.ajax({
         url: 'ajax/telegram.php',
-        type: 'POST',
+        type: "POST",
         cache: false,
         data: {'email': email},
         dataType: 'html'
