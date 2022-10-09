@@ -59,7 +59,7 @@ $('#button').click(function(e){
     let email = $('#email').val().trim()
 
     $.ajax({
-        url: 'ajax/telegram.php',
+        url: './ajax/telegram.php',
         type: 'POST',
         cache: false,
         data: {'email': email},
@@ -72,7 +72,7 @@ $('#modal__button').click(function(e){
     let email = $('#modal__email').val().trim()
 
     $.ajax({
-        url: 'ajax/telegram.php',
+        url: './ajax/telegram.php',
         type: 'POST',
         cache: false,
         data: {'email': email},
