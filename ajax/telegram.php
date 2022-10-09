@@ -1,7 +1,7 @@
 <?php
 $email = $_POST['email'];
 $token = "5636753991:AAF35fr9TtMEnq_YJUmhY6nkjMFJ4WWzSPE";
-$chat_id = -693363204;
+$chat_id = "-693363204";
 $arr = array{
     'Email пользователя: ' => $email
 };
