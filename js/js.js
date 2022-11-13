@@ -53,29 +53,3 @@ $(window).on('scroll', function(){
 $('#up').click(function(){
     $('html, body').animate({scrollTop: 0}, 500)
 })
-
-$('#button').click(function(e){
-    e.preventDefault()
-    let email = $('#email').val().trim()
-
-    $.ajax({
-        url: 'ajax/telegram.php',
-        type: "POST",
-        cache: false,
-        data: {'email': email},
-        dataType: 'html'
-    })
-})
-
-$('#modal__button').click(function(e){
-    e.preventDefault()
-    let email = $('#modal__email').val().trim()
-
-    $.ajax({
-        url: 'ajax/telegram.php',
-        type: "POST",
-        cache: false,
-        data: {'email': email},
-        dataType: 'html'
-    })
-})
